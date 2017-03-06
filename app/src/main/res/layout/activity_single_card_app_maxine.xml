@@ -25,34 +25,32 @@
             style="@style/NormalText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Maxine"
             android:layout_centerHorizontal="true"
-            android:layout_centerInParent="true"/>
+            android:layout_centerInParent="true"
+            android:text="@string/Maxine" />
 
         <TextView
             android:id="@+id/activity_main_textView_Adress"
             style="@style/NormalText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Adress"
+            android:layout_below="@id/activity_main_textView_Maxine"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/activity_main_textView_Maxine"/>
+            android:text="@string/Adress" />
 
-        <TextView
-            android:id="@+id/activity_main_textView_Phone"
-            style="@style/NormalText"
+        <ImageButton
+            android:id="@+id/ImageButtonPhone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_below="@+id/activity_main_textView_Adress"
-            android:text="@string/Phone" />
+            android:layout_centerHorizontal="true"
+            android:""" />
 
-        <TextView
-            android:id="@+id/activity_main_textView_Email"
-            style="@style/NormalText"
+        <ImageButton
+            android:id="@+id/ImageButtonEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/activity_main_textView_Phone"
+            android:layout_below="@+id/ImageButtonPhone"
             android:layout_centerHorizontal="true"
             android:text="@string/Email" />
 
