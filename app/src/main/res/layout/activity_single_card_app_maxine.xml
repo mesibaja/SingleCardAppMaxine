@@ -44,7 +44,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/activity_main_textView_Adress"
             android:layout_centerHorizontal="true"
-            android:""" />
+            android:src="@drawable/button_phone"
+            android:onClick="call_number" />
 
         <ImageButton
             android:id="@+id/ImageButtonEmail"
@@ -52,7 +53,17 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/ImageButtonPhone"
             android:layout_centerHorizontal="true"
-            android:text="@string/Email" />
+            android:src="@drawable/button_email"
+            android:onClick="send_email"/>
+
+        <ImageButton
+            android:id="@+id/ImageButtonWebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ImageButtonEmail"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/button_website"
+            android:onClick="goto_website" />
 
         <!--
 
