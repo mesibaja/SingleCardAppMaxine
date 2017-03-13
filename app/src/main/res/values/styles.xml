@@ -14,7 +14,7 @@
             <item name="android:layout_height">wrap_content</item>
             <item name="android:textSize">@dimen/text_normal_size</item>
             <item name="android:textColor">@color/textColor</item>
-            <item name="android:fontFamily">sans-serif</item>
+            <item name="android:fontFamily">cursive</item>
             <item name="android:textAlignment">center</item>
             <item name="android:layout_margin">@dimen/text_normal_margin</item>
         </style>

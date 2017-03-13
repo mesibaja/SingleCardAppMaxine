@@ -1,41 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    tools:context="com.example.android.singlecardappmaxine.SingleCardAppMaxine">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
         android:id="@+id/activity_single_card_app_maxine"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.example.android.singlecardappmaxine.SingleCardAppMaxine">
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColor"
+        android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/activity_main_imageView_maxine1"
-            android:layout_width="400dp"
-            android:layout_height="680dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
+            android:id="@+id/activity_main_imageView_maxineparis"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_weight="1"
             android:scaleType="centerCrop"
-            android:src="@drawable/maxine1" />
+            android:src="@drawable/maxineparis" />
 
         <TextView
             android:id="@+id/activity_main_textView_Maxine"
             style="@style/NormalText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerInParent="true"
             android:text="@string/Maxine" />
+
+        <ImageView
+            android:id="@+id/activity_main_imageView_maxinelogo"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/Future"
+            android:scaleType="centerCrop"
+            android:src="@drawable/maxinelogo" />
+
+        <RelativeLayout
+            android:id="@+id/activity_single_card_app_maxine1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/backgroundColor"
+            android:padding="20dp" />
 
         <TextView
             android:id="@+id/activity_main_textView_Adress"
             style="@style/NormalText"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/activity_main_textView_Maxine"
             android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
             android:text="@string/Adress" />
 
         <ImageButton
@@ -44,17 +61,19 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/activity_main_textView_Adress"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/button_phone"
-            android:onClick="call_number" />
+            android:contentDescription="@string/Phone"
+            android:onClick="call_number"
+            android:src="@drawable/call" />
 
         <ImageButton
             android:id="@+id/ImageButtonEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/ImageButtonPhone"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/button_email"
-            android:onClick="send_email"/>
+            android:layout_totheRight_of="@+id/ImageButtonPhone"
+            android:contentDescription="@string/Email"
+            android:onClick="send_email"
+            android:src="@drawable/emailweb" />
 
         <ImageButton
             android:id="@+id/ImageButtonWebsite"
@@ -62,8 +81,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/ImageButtonEmail"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/button_website"
-            android:onClick="goto_website" />
+            android:contentDescription="@string/Site"
+            android:onClick="goto_website"
+            android:src="@drawable/httpweb" />
 
         <!--
 
@@ -158,7 +178,7 @@
             android:text="@string/Focus" />
 
         -->
-
-    </RelativeLayout>
+        <RelativeLayout />
+    </LinearLayout />
 
 </ScrollView>

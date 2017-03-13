@@ -12,24 +12,27 @@ import android.view.View;
 public class SingleCardAppMaxine extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_single_card_app_maxine);
+    public void openWebPage(String url) {
+        Uri webpage = Uri.parse(url);
+        Intent intent = new Intent(Intent.ACTION_VIEW, www.maxinenwaneri.com);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
-}
-    public void honlapMethod(View view){
-        goToUrl("http://www.maxinenwaneri.com/") ;
-    }
-    private void goToUrl(String url){
-        Uri uriUrl=Uri.parse(url);
-        Intent launchBrowser = new Intent(Intent.ACTION_VIEW,uriUrl);
-        startActivity(launchBrowser);
 
+    public void dialPhoneNumber(String phoneNumber) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:" + 2125551212));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
-    public void MapMethod(View view){
-        Uri gmmIntentUri = Uri.parse("geo:Bergen, Norway?z=19");
-        Intent mapIntent = new Intent(Intent.ACTION_VIEW,gmmIntentUri);
-        mapIntent.setPackage("com.google.android.apps.maps");
-        startActivity(mapIntent);
+
+    public void showMap(Uri geoLocation) {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("geo:60.23, -5.19"));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
 }
