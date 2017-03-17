@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context="com.example.android.singlecardappmaxine.SingleCardAppMaxine">
 
-    <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/activity_single_card_app_maxine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/backgroundColor"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:context="com.example.android.singlecardappmaxine.SingleCardAppMaxine">
 
         <ImageView
             android:id="@+id/activity_main_imageView_maxineparis"
@@ -41,144 +42,138 @@
             android:id="@+id/activity_single_card_app_maxine1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:background="@color/backgroundColor"
-            android:padding="20dp" />
+            android:padding="20dp"
+            tools:context="com.example.android.singlecardappmaxine.SingleCardAppMaxine">
 
-        <TextView
-            android:id="@+id/activity_main_textView_Adress"
-            style="@style/NormalText"
+            <TextView
+                android:id="@+id/activity_main_textView_Adress"
+                style="@style/NormalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Adress" />
+
+            <ImageButton
+                android:id="@+id/ImageButtonPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/Phone"
+                android:onClick="CallNumber"
+                android:src="@drawable/call" />
+
+            <ImageButton
+                android:id="@+id/ImageButtonEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_totheRight_of="@+id/ImageButtonPhone"
+                android:contentDescription="@string/Email"
+                android:onClick="SendEmail"
+                android:src="@drawable/emailweb" />
+
+            <ImageButton
+                android:id="@+id/ImageButtonWebsite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_totheRight_of="@+id/ImageButtonEmail"
+                android:contentDescription="@string/Site"
+                android:onClick="GoToWebsite"
+                android:src="@drawable/httpweb" />
+
+            <!--
+
+        <ImageView
+            android:id="@+id/activity_main_imageView_background"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/activity_main_textView_Maxine"
-            android:layout_centerHorizontal="true"
-            android:layout_centerInParent="true"
-            android:text="@string/Adress" />
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/maxineparis" />
 
-        <ImageButton
-            android:id="@+id/ImageButtonPhone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/activity_main_textView_Adress"
-            android:layout_centerHorizontal="true"
-            android:contentDescription="@string/Phone"
-            android:onClick="call_number"
-            android:src="@drawable/call" />
+        <ImageView
+            android:id="@+id/activity_main_imageView_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/maxinelogo"
+            android:contentDescription="maxinelogo"/>
 
-        <ImageButton
-            android:id="@+id/ImageButtonEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_totheRight_of="@+id/ImageButtonPhone"
-            android:contentDescription="@string/Email"
-            android:onClick="send_email"
-            android:src="@drawable/emailweb" />
+            <TextView
+                android:id="@+id/activity_main_textView_Maxine"
+                style="@style/NormalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/text_normal_margin"
+                android:text="@string/Maxine" />
 
-        <ImageButton
-            android:id="@+id/ImageButtonWebsite"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/ImageButtonEmail"
-            android:layout_centerHorizontal="true"
-            android:contentDescription="@string/Site"
-            android:onClick="goto_website"
-            android:src="@drawable/httpweb" />
+            <TextView
+                android:id="@+id/activity_main_textView_Future"
+                style="@style/NormalText"
+                android:layout_below="@+id/activity_main_textView_Maxine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/text_normal_margin"
+                android:text="@string/Future" />
 
-        <!--
+            <TextView
+                android:id="@+id/activity_main_textView_Vision"
+                style="@style/NormalText"
+                android:layout_below="@+id/activity_main_textView_Future"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/text_normal_margin"
+                android:text="@string/Vision" />
 
-    <ImageView
-        android:id="@+id/activity_main_imageView_background"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:scaleType="centerCrop"
-        android:src="@drawable/maxineparis" />
+                <TextView
+                android:id="@+id/activity_main_textView_Believe"
+                style="@style/NormalText"
+                android:layout_below="@+id/activity_main_textView_Vision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/text_normal_margin"
+                android:text="@string/Believe" />
 
-    <ImageView
-        android:id="@+id/activity_main_imageView_background"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:scaleType="centerCrop"
-        android:src="@drawable/maxinelogo"
-        android:contentDescription="maxinelogo"/>
+            <TextView
+                android:id="@+id/activity_main_textView_Prior"
+                style="@style/NormalText"
+                android:layout_below="@+id/activity_main_textView_Believe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/text_normal_margin"
+                android:text="@string/Prior" />
 
-        <TextView
-            android:id="@+id/activity_main_textView_Maxine"
-            style="@style/NormalText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/text_normal_margin"
-            android:text="@string/Maxine" />
+            <TextView
+                android:id="@+id/activity_main_textView_Citizen"
+                style="@style/NormalText"
+                android:layout_below="@+id/activity_main_textView_Prior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/text_normal_margin"
+                android:text="@string/Citizen" />
 
-        <TextView
-            android:id="@+id/activity_main_textView_Future"
-            style="@style/NormalText"
-            android:layout_below="@+id/activity_main_textView_Maxine"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/text_normal_margin"
-            android:text="@string/Future" />
+            <TextView
+                android:id="@+id/activity_main_textView_Focus"
+                style="@style/NormalText"
+                android:layout_below="@+id/activity_main_textView_Citizen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/text_normal_margin"
+                android:text="@string/Focus" />
 
-        <TextView
-            android:id="@+id/activity_main_textView_Vision"
-            style="@style/NormalText"
-            android:layout_below="@+id/activity_main_textView_Future"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/text_normal_margin"
-            android:text="@string/Vision" />
+            -->
+        </RelativeLayout />
 
-        <TextView
-            android:id="@+id/activity_main_textView_Believe"
-            style="@style/NormalText"
-            android:layout_below="@+id/activity_main_textView_Vision"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/text_normal_margin"
-            android:text="@string/Believe" />
-
-        <TextView
-            android:id="@+id/activity_main_textView_Prior"
-            style="@style/NormalText"
-            android:layout_below="@+id/activity_main_textView_Believe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/text_normal_margin"
-            android:text="@string/Prior" />
-
-        <TextView
-            android:id="@+id/activity_main_textView_Citizen"
-            style="@style/NormalText"
-            android:layout_below="@+id/activity_main_textView_Prior"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/text_normal_margin"
-            android:text="@string/Citizen" />
-
-        <TextView
-            android:id="@+id/activity_main_textView_Focus"
-            style="@style/NormalText"
-            android:layout_below="@+id/activity_main_textView_Citizen"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/text_normal_margin"
-            android:text="@string/Focus" />
-
-        -->
-        <RelativeLayout />
     </LinearLayout />
 
-</ScrollView>
+</ScrollView />
