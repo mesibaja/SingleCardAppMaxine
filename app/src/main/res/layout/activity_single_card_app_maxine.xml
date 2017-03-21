@@ -1,24 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/maxine1"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
     tools:context="com.example.android.singlecardappmaxine.SingleCardAppMaxine">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/activity_single_card_app_maxine"
+    <ImageView
+        android:id="@+id/activity_main_imageView_maxinelogo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="@string/Email"
+        android:scaleType="centerCrop"
+        android:src="@drawable/maxinelogo" />
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/backgroundColor"
-        android:orientation="vertical"
         tools:context="com.example.android.singlecardappmaxine.SingleCardAppMaxine">
+
+        <LinearLayout
+            android:id="@+id/maxine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundColor"
+            android:orientation="vertical"
+            tools:context="com.example.android.singlecardappmaxine.SingleCardAppMaxine">
 
         <ImageView
             android:id="@+id/activity_main_imageView_maxineparis"
             android:layout_width="match_parent"
-            android:layout_height="170dp"
-            android:layout_weight="1"
+            android:layout_height="250dp"
+            android:contentDescription="@string/Site"
             android:scaleType="centerCrop"
             android:src="@drawable/maxineparis" />
 
@@ -29,52 +44,58 @@
             android:layout_height="wrap_content"
             android:text="@string/Maxine" />
 
-        <ImageView
-            android:id="@+id/activity_main_imageView_maxinelogo"
-            android:layout_width="match_parent"
-            android:layout_height="220dp"
-            android:layout_weight="1"
-            android:contentDescription="@string/Future"
-            android:scaleType="centerCrop"
-            android:src="@drawable/maxinelogo" />
-
-        <RelativeLayout
-            android:id="@+id/activity_single_card_app_maxine1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        <LinearLayout
+            android:id="@+id/maxine3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
             android:background="@color/backgroundColor"
-            android:padding="20dp"
+            android:orientation="horizontal"
             tools:context="com.example.android.singlecardappmaxine.SingleCardAppMaxine">
+
+            <TextView
+                android:id="@+id/activity_main_textView_Contact"
+                style="@style/NormalText"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/Contact" />
 
             <TextView
                 android:id="@+id/activity_main_textView_Adress"
                 style="@style/NormalText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="5dp"
                 android:text="@string/Adress" />
 
             <ImageButton
-                android:id="@+id/ImageButtonPhone"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/image_button_phone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:contentDescription="@string/Phone"
                 android:onClick="CallNumber"
                 android:src="@drawable/call" />
 
             <ImageButton
-                android:id="@+id/ImageButtonEmail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_totheRight_of="@+id/ImageButtonPhone"
+                android:id="@+id/image_button_email"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="5dp"
                 android:contentDescription="@string/Email"
                 android:onClick="SendEmail"
                 android:src="@drawable/emailweb" />
 
             <ImageButton
-                android:id="@+id/ImageButtonWebsite"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_totheRight_of="@+id/ImageButtonEmail"
+                android:id="@+id/image_button_website"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="5dp"
                 android:contentDescription="@string/Site"
                 android:onClick="GoToWebsite"
                 android:src="@drawable/httpweb" />
@@ -172,8 +193,10 @@
                 android:text="@string/Focus" />
 
             -->
-        </RelativeLayout />
+        </LinearLayout>
 
-    </LinearLayout />
+    </ScrollView>
 
-</ScrollView />
+</LinearLayout>
+
+    </LinearLayout>
