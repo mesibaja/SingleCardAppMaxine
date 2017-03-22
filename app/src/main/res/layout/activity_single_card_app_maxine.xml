@@ -8,41 +8,36 @@
     android:orientation="vertical"
     tools:context="com.example.android.singlecardappmaxine.SingleCardAppMaxine">
 
-    <ImageView
-        android:id="@+id/activity_main_imageView_maxinelogo"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:contentDescription="@string/Email"
-        android:scaleType="centerCrop"
-        android:src="@drawable/maxinelogo" />
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:context="com.example.android.singlecardappmaxine.SingleCardAppMaxine">
-
-        <LinearLayout
-            android:id="@+id/maxine2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/backgroundColor"
-            android:orientation="vertical"
-            tools:context="com.example.android.singlecardappmaxine.SingleCardAppMaxine">
+        <!-- Logo -->
 
         <ImageView
-            android:id="@+id/activity_main_imageView_maxineparis"
+            android:id="@+id/activity_main_imageview_maxinelogo"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="220dp"
+            android:contentDescription="@string/Email"
+            android:scaleType="centerCrop"
+            android:src="@drawable/maxinelogo" />
+
+        <!-- Paris Pic -->
+
+        <ImageView
+            android:id="@+id/activity_main_imageview_maxineparis"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
             android:contentDescription="@string/Site"
             android:scaleType="centerCrop"
             android:src="@drawable/maxineparis" />
 
+        <!-- Introduction -->
+
         <TextView
-            android:id="@+id/activity_main_textView_Maxine"
+            android:id="@+id/activity_main_textview_maxine"
             style="@style/NormalText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Maxine" />
+
+        <!-- Horizontal Linear View -->
 
         <LinearLayout
             android:id="@+id/maxine3"
@@ -52,23 +47,29 @@
             android:orientation="horizontal"
             tools:context="com.example.android.singlecardappmaxine.SingleCardAppMaxine">
 
+            <!-- Contact Button -->
+
             <TextView
-                android:id="@+id/activity_main_textView_Contact"
+                android:id="@+id/activity_main_textview_contact"
                 style="@style/NormalText"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:layout_marginLeft="0dp"
                 android:layout_marginStart="5dp"
                 android:text="@string/Contact" />
 
+            <!-- Adress Button -->
+
             <TextView
-                android:id="@+id/activity_main_textView_Adress"
+                android:id="@+id/activity_main_textview_adress"
                 style="@style/NormalText"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:layout_marginLeft="0dp"
                 android:layout_marginStart="5dp"
                 android:text="@string/Adress" />
+
+            <!-- Phone Button -->
 
             <ImageButton
                 android:id="@+id/image_button_phone"
@@ -80,6 +81,8 @@
                 android:onClick="CallNumber"
                 android:src="@drawable/call" />
 
+            <!-- Email Button -->
+
             <ImageButton
                 android:id="@+id/image_button_email"
                 android:layout_width="40dp"
@@ -89,6 +92,8 @@
                 android:contentDescription="@string/Email"
                 android:onClick="SendEmail"
                 android:src="@drawable/emailweb" />
+
+            <!-- Website Button -->
 
             <ImageButton
                 android:id="@+id/image_button_website"
@@ -102,7 +107,7 @@
 
             <!--
 
-        <ImageView
+            <ImageView
             android:id="@+id/activity_main_imageView_background"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -112,7 +117,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/maxineparis" />
 
-        <ImageView
+            <ImageView
             android:id="@+id/activity_main_imageView_background"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -194,9 +199,5 @@
 
             -->
         </LinearLayout>
-
-    </ScrollView>
-
-</LinearLayout>
 
     </LinearLayout>
