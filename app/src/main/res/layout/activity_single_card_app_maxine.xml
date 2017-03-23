@@ -23,7 +23,7 @@
         <ImageView
             android:id="@+id/activity_main_imageview_maxineparis"
             android:layout_width="match_parent"
-            android:layout_height="310dp"
+            android:layout_height="220dp"
             android:contentDescription="@string/Site"
             android:scaleType="centerCrop"
             android:src="@drawable/maxineparis" />
