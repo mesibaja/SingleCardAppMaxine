@@ -26,7 +26,7 @@ public class SingleCardAppMaxine extends AppCompatActivity {
     }
 
 public void GoToWebsite(View v){
-        Intent openWebsite=new Intent(Intent.ACTION_VIEW,Uri.parse("www.maxinenwaneri.com"));
+        Intent openWebsite=new Intent(Intent.ACTION_VIEW,Uri.parse("http://www.maxinenwaneri.com"));
         startActivity(openWebsite);
         }
 }
