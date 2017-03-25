@@ -14,184 +14,184 @@
         android:layout_height="match_parent">
 
 
-            <LinearLayout
-                android:id="@+id/activity_maxine2"
+        <LinearLayout
+            android:id="@+id/activity_maxine2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Maxine Pic -->
+
+            <ImageView
+                android:id="@+id/activity_main_imageview_maxineparis"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:contentDescription="@string/Site"
+                android:src="@drawable/maxine1" />
+
+            <!-- Introduction -->
+
+            <TextView
+                android:id="@+id/activity_main_textview_maxine"
+                style="@style/Title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/text_normal_margin"
+                android:text="@string/Maxine" />
 
-                <!-- Maxine Pic -->
+            <TextView
+                android:id="@+id/activity_main_textView_Future"
+                style="@style/NormalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/text_normal_margin"
+                android:text="@string/Future" />
 
-                <ImageView
-                    android:id="@+id/activity_main_imageview_maxineparis"
-                    android:layout_width="match_parent"
-                    android:layout_height="380dp"
-                    android:contentDescription="@string/Site"
-                    android:src="@drawable/maxine1" />
+            <TextView
+                android:id="@+id/activity_main_textView_Vision"
+                style="@style/NormalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/text_normal_margin"
+                android:text="@string/Vision" />
 
-                <!-- Introduction -->
+            <TextView
+                android:id="@+id/activity_main_textView_Believe"
+                style="@style/NormalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/text_normal_margin"
+                android:text="@string/Believe" />
 
-                <TextView
-                    android:id="@+id/activity_main_textview_maxine"
-                    style="@style/NormalText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/text_normal_margin"
-                    android:layout_gravity="center"
-                    android:text="@string/Maxine" />
+            <TextView
+                android:id="@+id/activity_main_textView_Prior"
+                style="@style/NormalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/text_normal_margin"
+                android:text="@string/Prior" />
 
-                <TextView
-                    android:id="@+id/activity_main_textView_Future"
-                    style="@style/NormalText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/text_normal_margin"
-                    android:layout_gravity="center"
-                    android:text="@string/Future" />
+            <TextView
+                android:id="@+id/activity_main_textView_Citizen"
+                style="@style/NormalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/text_normal_margin"
+                android:text="@string/Citizen" />
 
-                <TextView
-                    android:id="@+id/activity_main_textView_Vision"
-                    style="@style/NormalText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/text_normal_margin"
-                    android:layout_gravity="center"
-                    android:text="@string/Vision" />
-
-                <TextView
-                    android:id="@+id/activity_main_textView_Believe"
-                    style="@style/NormalText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/text_normal_margin"
-                    android:layout_gravity="center"
-                    android:text="@string/Believe" />
-
-                <TextView
-                    android:id="@+id/activity_main_textView_Prior"
-                    style="@style/NormalText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/text_normal_margin"
-                    android:layout_gravity="center"
-                    android:text="@string/Prior" />
-
-                <TextView
-                    android:id="@+id/activity_main_textView_Citizen"
-                    style="@style/NormalText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/text_normal_margin"
-                    android:layout_gravity="center"
-                    android:text="@string/Citizen" />
-
-                <TextView
-                    android:id="@+id/activity_main_textView_Focus"
-                    style="@style/NormalText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/text_normal_margin"
-                    android:layout_gravity="center"
-                    android:text="@string/Focus" />
+            <TextView
+                android:id="@+id/activity_main_textView_Focus"
+                style="@style/NormalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/text_normal_margin"
+                android:text="@string/Focus" />
 
             <!-- Horizontal Linear View -->
 
-                <LinearLayout
-                    android:id="@+id/maxine3"
+            <LinearLayout
+                android:id="@+id/maxine3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/backgroundColor"
+                android:orientation="horizontal"
+                tools:context="com.example.android.singlecardappmaxine.SingleCardAppMaxine">
+
+                <!-- Contact Button -->
+
+                <TextView
+                    android:id="@+id/activity_main_textview_contact"
+                    style="@style/NormalText"
                     android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:background="@color/backgroundColor"
-                    android:orientation="horizontal"
-                    tools:context="com.example.android.singlecardappmaxine.SingleCardAppMaxine">
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/Contact" />
 
-                    <!-- Contact Button -->
+                <!-- Adress Button -->
 
-                    <TextView
-                        android:id="@+id/activity_main_textview_contact"
-                        style="@style/NormalText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="0dp"
-                        android:layout_marginStart="5dp"
-                        android:text="@string/Contact" />
+                <TextView
+                    android:id="@+id/activity_main_textview_adress"
+                    style="@style/NormalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/Adress" />
 
-                    <!-- Adress Button -->
+                <!-- Phone Button -->
 
-                    <TextView
-                        android:id="@+id/activity_main_textview_adress"
-                        style="@style/NormalText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="0dp"
-                        android:layout_marginStart="5dp"
-                        android:text="@string/Adress" />
+                <ImageButton
+                    android:id="@+id/image_button_phone"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/Phone"
+                    android:onClick="CallNumber"
+                    android:src="@drawable/call" />
 
-                    <!-- Phone Button -->
+                <!-- Email Button -->
 
-                    <ImageButton
-                        android:id="@+id/image_button_phone"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginStart="5dp"
-                        android:contentDescription="@string/Phone"
-                        android:onClick="CallNumber"
-                        android:src="@drawable/call" />
+                <ImageButton
+                    android:id="@+id/image_button_email"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/Email"
+                    android:onClick="SendEmail"
+                    android:src="@drawable/emailweb" />
 
-                    <!-- Email Button -->
+                <!-- Website Button -->
 
-                    <ImageButton
-                        android:id="@+id/image_button_email"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginStart="5dp"
-                        android:contentDescription="@string/Email"
-                        android:onClick="SendEmail"
-                        android:src="@drawable/emailweb" />
-
-                    <!-- Website Button -->
-
-                    <ImageButton
-                        android:id="@+id/image_button_website"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginStart="5dp"
-                        android:contentDescription="@string/Site"
-                        android:onClick="GoToWebsite"
-                        android:src="@drawable/httpweb" />
+                <ImageButton
+                    android:id="@+id/image_button_website"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/Site"
+                    android:onClick="GoToWebsite"
+                    android:src="@drawable/httpweb" />
 
 
             </LinearLayout>
 
-            </LinearLayout>
+        </LinearLayout>
 
-            <!--
+        <!--
 
-            <ImageView
-            android:id="@+id/activity_main_imageView_background"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/maxineparis" />
+        <ImageView
+        android:id="@+id/activity_main_imageView_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/maxineparis" />
 
-            <ImageView
-            android:id="@+id/activity_main_imageView_background"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/maxinelogo"
-            android:contentDescription="maxinelogo"/>
+        <ImageView
+        android:id="@+id/activity_main_imageView_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/maxinelogo"
+        android:contentDescription="maxinelogo"/>
 
 
-            -->
+        -->
 
     </ScrollView>
 
@@ -199,12 +199,12 @@
         android:id="@+id/activity_main_imageview_maxinelogo"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:contentDescription="@string/Email"
-        android:scaleType="fitCenter"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
+        android:contentDescription="@string/Email"
         android:cropToPadding="false"
+        android:scaleType="fitCenter"
         android:src="@drawable/maxinelogo" />
 
-    </RelativeLayout>
+</RelativeLayout>
