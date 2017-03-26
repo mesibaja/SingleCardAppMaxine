@@ -16,7 +16,7 @@ sendEmailIntent.putExtra(Intent.EXTRA_SUBJECT, "Please give me a call back at...
     sendEmailIntent.putExtra(Intent.EXTRA_TEXT, "Write your message here.");
     startActivity(Intent.createChooser(sendEmailIntent, "Choose an email with Gmail etc..."));
     }
-}
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
