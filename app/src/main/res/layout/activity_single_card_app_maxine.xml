@@ -50,27 +50,9 @@
                 android:text="@string/Future" />
 
             <TextView
-                android:id="@+id/activity_main_textView_Vision"
-                style="@style/NormalText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/text_normal_margin"
-                android:text="@string/Vision" />
-
-            <TextView
-                android:id="@+id/activity_main_textView_Believe"
-                style="@style/NormalText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/text_normal_margin"
-                android:text="@string/Believe" />
-
-            <TextView
                 android:id="@+id/activity_main_textView_Prior"
                 style="@style/NormalText"
-                android:layout_width="wrap_content"
+                    android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/text_normal_margin"
@@ -126,17 +108,17 @@
                     android:layout_marginStart="5dp"
                     android:text="@string/Adress" />
 
-                <!-- Phone Button -->
+                <!-- Calendar Button -->
 
-                <ImageButton
-                    android:id="@+id/image_button_phone"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginStart="5dp"
-                    android:contentDescription="@string/Phone"
-                    android:onClick="CallNumber"
-                    android:src="@drawable/call" />
+                <Button
+                    android:id="@+id/angry_btn"
+                    android:text="@string/Calendar"
+                    android:textColor="#FFF5EE"
+                    android:textSize="8sp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:onClick="OpenCalendar"
+                    android:background="@drawable/buttonshape" />
 
                 <!-- Email Button -->
 

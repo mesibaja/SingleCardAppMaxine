@@ -14,7 +14,7 @@
             <item name="android:layout_height">wrap_content</item>
             <item name="android:textSize">@dimen/text_normal_size</item>
             <item name="android:textColor">@color/textColor</item>
-            <item name="android:fontFamily">cursive</item>
+            <item name="android:fontFamily">casual</item>
             <item name="android:textAlignment">center</item>
             <item name="android:layout_margin">@dimen/activity_horizontal_margin</item>
         </style>
@@ -25,7 +25,7 @@
             <item name="android:layout_height">wrap_content</item>
             <item name="android:textSize">@dimen/text_bigger_size</item>
             <item name="android:textColor">@color/textColor</item>
-            <item name="android:fontFamily">cursive</item>
+            <item name="android:fontFamily">casual</item>
             <item name="android:textAlignment">center</item>
             <item name="android:layout_margin">@dimen/text_normal_margin</item>
         </style>
