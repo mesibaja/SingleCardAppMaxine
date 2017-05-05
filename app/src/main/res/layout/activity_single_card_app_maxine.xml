@@ -32,13 +32,22 @@
             <!-- Introduction -->
 
             <TextView
-                android:id="@+id/activity_main_textview_maxine"
+                android:id="@+id/activity_main_textView_Maxine"
                 style="@style/Title"
-                android:layout_width="wrap_content"
+                android:layout_width="330dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/text_normal_margin"
                 android:text="@string/Maxine" />
+
+            <TextView
+                android:id="@+id/activity_main_textView_Greater"
+                style="@style/NormalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/text_normal_margin"
+                android:text="@string/Greater" />
 
             <TextView
                 android:id="@+id/activity_main_textView_Future"
@@ -52,7 +61,7 @@
             <TextView
                 android:id="@+id/activity_main_textView_Prior"
                 style="@style/NormalText"
-                    android:layout_width="wrap_content"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/text_normal_margin"
@@ -76,73 +85,87 @@
                 android:layout_margin="@dimen/text_normal_margin"
                 android:text="@string/Focus" />
 
-            <!-- Horizontal Linear View -->
-
-            <LinearLayout
-                android:id="@+id/maxine3"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:background="@color/backgroundColor"
-                android:orientation="horizontal"
-                tools:context="com.example.android.singlecardappmaxine.SingleCardAppMaxine">
-
-                <!-- Contact -->
+                <!-- Contact and Adress -->
 
                 <TextView
                     android:id="@+id/activity_main_textview_contact"
                     style="@style/NormalText"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="0dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:text="@string/Contact" />
 
-                <!-- Adress Information -->
+            <!-- Horizontal Linear View -->
 
-                <TextView
-                    android:id="@+id/activity_main_textview_adress"
-                    style="@style/NormalText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="0dp"
-                    android:layout_marginStart="5dp"
-                    android:text="@string/Adress" />
+            <LinearLayout
+                android:id="@+id/maxine3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/backgroundColor"
+                android:orientation="horizontal"
+                tools:context="com.example.android.singlecardappmaxine.SingleCardAppMaxine">
 
-                <!-- Calendar Button -->
+            <!-- Calendar Button -->
 
                 <Button
-                    android:id="@+id/angry_btn"
+                    android:id="@+id/angry_btn_calendar"
                     android:text="@string/Calendar"
                     android:textColor="#FFF5EE"
-                    android:textSize="8sp"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:textSize="12sp"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="40dp"
                     android:onClick="OpenCalendar"
                     android:background="@drawable/buttonshape" />
 
                 <!-- Email Button -->
 
-                <ImageButton
-                    android:id="@+id/image_button_email"
-                    android:layout_width="40dp"
+                <Button
+                    android:id="@+id/angry_btn_email"
+                    android:text="@string/Email"
+                    android:textColor="#FFF5EE"
+                    android:textSize="12sp"
+                    android:layout_width="50dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginStart="5dp"
-                    android:contentDescription="@string/Email"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="40dp"
                     android:onClick="SendEmail"
-                    android:src="@drawable/emailweb" />
+                    android:background="@drawable/buttonshape" />
 
                 <!-- Website Button -->
 
-                <ImageButton
-                    android:id="@+id/image_button_website"
-                    android:layout_width="40dp"
+                <Button
+                    android:id="@+id/angry_btn_website"
+                    android:text="@string/Site"
+                    android:textColor="#FFF5EE"
+                    android:textSize="12sp"
+                    android:layout_width="60dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginStart="5dp"
-                    android:contentDescription="@string/Site"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="40dp"
                     android:onClick="GoToWebsite"
-                    android:src="@drawable/httpweb" />
+                    android:background="@drawable/buttonshape" />
+
+                    <Button
+                        android:id="@+id/angry_btn_facebook"
+                        android:text="@string/FB"
+                        android:textColor="#FFF5EE"
+                        android:textSize="12sp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="40dp"
+                        android:onClick="OpenFacebook"
+                        android:background="@drawable/buttonshape" />
 
 
             </LinearLayout>

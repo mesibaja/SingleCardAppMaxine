@@ -1,14 +1,15 @@
 <resources>
     <string name="app_name">Single Card App Maxine</string>
-    <string name="Maxine">I\'m Maxine Nwaneri Founder of \"THE FUTURE IS GREATER\"</string>
+    <string name="Maxine">I\'m Maxine Nwaneri Founder of</string>
+    <string name="Greater">\"THE FUTURE IS GREATER\"</string>
     <string name="Future">The Future is Greater is a Success Coaching and Training Practice with the vision of helping ambitious women create and experience exactly that, A Greater Future in terms of reaching their potential, and making a greater impact in the world through their work, while living stress free personal lives they love.</string>
     <string name="Prior">Prior to setting up her Coaching Practice, Maxine went from what she describes as \"a complete mess and failure\", to graduating at the top of her class, studying with some of the most intelligent minds in the world while obtaining her MBA from the Prestigious University of Cambridge, and acquiring over a decade\'s experience working in large corporations internationally in Senior Management and Leadership Positions.</string>
     <string name="Citizen"> The lessons she has learnt having overcome significant obstacles and challenges in her own life, have helped shape the strategies she impacts hundreds with today both through her practice, and contributions in the Huffington Post.</string>
     <string name="Focus">Her unwavering focus remains to continue to create an even greater future for herself, her family, and her clients around the world.</string>
-    <string name="Adress">Bergen Norway</string>
     <string name="Calendar">Calendar</string>
-    <string name="Email">maxine@maxinenwaneri.com</string>
-    <string name="Site">www.maxinenwaneri.com</string>
-    <string name="Contact">Contact</string>
+    <string name="Email">Email</string>
+    <string name="Site">Website</string>
+    <string name="Contact">Contact: Bergen Norway</string>
+    <string name="FB">FB</string>
 
 </resources>
