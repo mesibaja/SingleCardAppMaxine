@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Single Card App Maxine</string>
+    <string name="Picture">Maxine</string>
+    <string name="Logo">Maxine\'s Logo</string>
     <string name="Maxine">I\'m Maxine Nwaneri Founder of</string>
     <string name="Greater">\"THE FUTURE IS GREATER\"</string>
     <string name="Future">The Future is Greater is a Success Coaching and Training Practice with the vision of helping ambitious women create and experience exactly that, A Greater Future in terms of reaching their potential, and making a greater impact in the world through their work, while living stress free personal lives they love.</string>

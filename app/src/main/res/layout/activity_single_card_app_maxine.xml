@@ -13,20 +13,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <LinearLayout
             android:id="@+id/activity_maxine2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <!-- Maxine Pic -->
 
             <ImageView
-                android:id="@+id/activity_main_imageview_maxineparis"
+                android:id="@+id/activity_main_imageView_MaxineParis"
                 android:layout_width="match_parent"
                 android:layout_height="380dp"
-                android:contentDescription="@string/Site"
+                android:contentDescription="@string/Picture"
                 android:src="@drawable/maxine1" />
 
             <!-- Introduction -->
@@ -34,55 +33,31 @@
             <TextView
                 android:id="@+id/activity_main_textView_Maxine"
                 style="@style/Title"
-                android:layout_width="330dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/text_normal_margin"
                 android:text="@string/Maxine" />
 
             <TextView
                 android:id="@+id/activity_main_textView_Greater"
                 style="@style/NormalText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/text_normal_margin"
                 android:text="@string/Greater" />
 
             <TextView
                 android:id="@+id/activity_main_textView_Future"
                 style="@style/NormalText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/text_normal_margin"
                 android:text="@string/Future" />
 
             <TextView
                 android:id="@+id/activity_main_textView_Prior"
                 style="@style/NormalText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/text_normal_margin"
                 android:text="@string/Prior" />
 
             <TextView
                 android:id="@+id/activity_main_textView_Citizen"
                 style="@style/NormalText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/text_normal_margin"
                 android:text="@string/Citizen" />
 
             <TextView
                 android:id="@+id/activity_main_textView_Focus"
                 style="@style/NormalText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/text_normal_margin"
                 android:text="@string/Focus" />
 
                 <!-- Contact and Adress -->
@@ -90,9 +65,6 @@
                 <TextView
                     android:id="@+id/activity_main_textview_contact"
                     style="@style/NormalText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/Contact" />
 
             <!-- Horizontal Linear View -->
@@ -110,69 +82,36 @@
                 <Button
                     android:id="@+id/angry_btn_calendar"
                     android:text="@string/Calendar"
-                    android:textColor="#FFF5EE"
-                    android:textSize="12sp"
-                    android:layout_width="70dp"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="40dp"
                     android:onClick="OpenCalendar"
-                    android:background="@drawable/buttonshape" />
+                    style="@style/Button"/>
 
                 <!-- Email Button -->
 
                 <Button
                     android:id="@+id/angry_btn_email"
                     android:text="@string/Email"
-                    android:textColor="#FFF5EE"
-                    android:textSize="12sp"
-                    android:layout_width="50dp"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="40dp"
                     android:onClick="SendEmail"
-                    android:background="@drawable/buttonshape" />
+                    style="@style/Button"/>
 
                 <!-- Website Button -->
 
                 <Button
                     android:id="@+id/angry_btn_website"
                     android:text="@string/Site"
-                    android:textColor="#FFF5EE"
-                    android:textSize="12sp"
-                    android:layout_width="60dp"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="40dp"
                     android:onClick="GoToWebsite"
-                    android:background="@drawable/buttonshape" />
+                    style="@style/Button" />
 
                     <Button
                         android:id="@+id/angry_btn_facebook"
                         android:text="@string/FB"
-                        android:textColor="#FFF5EE"
-                        android:textSize="12sp"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginStart="50dp"
-                        android:layout_marginLeft="50dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginBottom="40dp"
                         android:onClick="OpenFacebook"
-                        android:background="@drawable/buttonshape" />
+                        style="@style/Button" />
 
+                    </LinearLayout>
 
-            </LinearLayout>
+                </LinearLayout>
 
-        </LinearLayout>
-
-    </ScrollView>
+            </ScrollView>
 
     <ImageView
         android:id="@+id/activity_main_imageview_maxinelogo"
@@ -181,7 +120,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:contentDescription="@string/Email"
+        android:contentDescription="@string/Logo"
         android:cropToPadding="false"
         android:scaleType="fitCenter"
         android:src="@drawable/maxinelogo" />
