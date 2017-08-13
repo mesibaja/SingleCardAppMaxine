@@ -28,44 +28,10 @@
                 android:contentDescription="@string/Picture"
                 android:src="@drawable/maxine1" />
 
-            <!-- Introduction -->
-
-            <TextView
-                android:id="@+id/activity_main_textView_Maxine"
-                style="@style/Title"
-                android:text="@string/Maxine" />
-
-            <TextView
-                android:id="@+id/activity_main_textView_Greater"
-                style="@style/NormalText"
-                android:text="@string/Greater" />
-
             <TextView
                 android:id="@+id/activity_main_textView_Future"
                 style="@style/NormalText"
                 android:text="@string/Future" />
-
-            <TextView
-                android:id="@+id/activity_main_textView_Prior"
-                style="@style/NormalText"
-                android:text="@string/Prior" />
-
-            <TextView
-                android:id="@+id/activity_main_textView_Citizen"
-                style="@style/NormalText"
-                android:text="@string/Citizen" />
-
-            <TextView
-                android:id="@+id/activity_main_textView_Focus"
-                style="@style/NormalText"
-                android:text="@string/Focus" />
-
-                <!-- Contact and Adress -->
-
-                <TextView
-                    android:id="@+id/activity_main_textview_contact"
-                    style="@style/NormalText"
-                    android:text="@string/Contact" />
 
             <!-- Horizontal Linear View -->
 
@@ -77,41 +43,51 @@
                 android:orientation="horizontal"
                 tools:context="com.example.android.singlecardappmaxine.SingleCardAppMaxine">
 
-            <!-- Calendar Button -->
+                <!-- Calendar Button -->
 
                 <Button
                     android:id="@+id/angry_btn_calendar"
-                    android:text="@string/Calendar"
+                    style="@style/Button"
+                    android:layout_weight="1"
+                    android:layout_gravity="start"
                     android:onClick="OpenCalendar"
-                    style="@style/Button"/>
+                    android:text="@string/Calendar" />
 
                 <!-- Email Button -->
 
                 <Button
                     android:id="@+id/angry_btn_email"
-                    android:text="@string/Email"
+                    style="@style/Button"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
                     android:onClick="SendEmail"
-                    style="@style/Button"/>
+                    android:text="@string/Email" />
 
                 <!-- Website Button -->
 
                 <Button
                     android:id="@+id/angry_btn_website"
-                    android:text="@string/Site"
+                    style="@style/Button"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
                     android:onClick="GoToWebsite"
-                    style="@style/Button" />
+                    android:text="@string/Site" />
 
-                    <Button
-                        android:id="@+id/angry_btn_facebook"
-                        android:text="@string/FB"
-                        android:onClick="OpenFacebook"
-                        style="@style/Button" />
+                <!-- Facebook Button -->
 
-                    </LinearLayout>
+                <Button
+                    android:id="@+id/angry_btn_facebook"
+                    style="@style/Button"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:onClick="OpenFacebook"
+                    android:text="@string/FB" />
 
-                </LinearLayout>
+            </LinearLayout>
 
-            </ScrollView>
+        </LinearLayout>
+
+    </ScrollView>
 
     <ImageView
         android:id="@+id/activity_main_imageview_maxinelogo"

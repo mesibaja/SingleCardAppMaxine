@@ -2,6 +2,7 @@ package com.example.android.singlecardappmaxine;
 
 import android.content.ContentUris;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.ActionBarActivity;
 import android.net.Uri;
 import android.os.Bundle;
@@ -12,6 +13,12 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class SingleCardAppMaxine extends AppCompatActivity {
+
+    TextView textView;
+
+    textView=(TextView)findViewById(R.id.activity_main_textView_Future);
+
+    Typeface face= Typeface.createFromAsset(getAssets(), "fonts/MiltonTwoBold.ttf");
 
     public void SendEmail(View v) {
         Intent sendEmailIntent = new Intent(Intent.ACTION_SENDTO,
@@ -28,18 +35,18 @@ public class SingleCardAppMaxine extends AppCompatActivity {
         setContentView(R.layout.activity_single_card_app_maxine);
     }
 
-    public void OpenCalendar (View v) {
-        Intent openCalendar=new Intent(Intent.ACTION_VIEW,Uri.parse("https://maxinenwaneri.satoriapp.com/book"));
+    public void OpenCalendar(View v) {
+        Intent openCalendar = new Intent(Intent.ACTION_VIEW, Uri.parse("https://maxinenwaneri.satoriapp.com/book"));
         startActivity(openCalendar);
     }
 
-    public void GoToWebsite(View v){
-        Intent openWebsite=new Intent(Intent.ACTION_VIEW,Uri.parse("http://www.thefutureisgreater.com"));
+    public void GoToWebsite(View v) {
+        Intent openWebsite = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.thefutureisgreater.com"));
         startActivity(openWebsite);
     }
 
-    public void OpenFacebook (View v) {
-        Intent openFacebook=new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.facebook.com/groups/TheFutureisGreater/?ref=group_cover"));
+    public void OpenFacebook(View v) {
+        Intent openFacebook = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/groups/TheFutureisGreater/?ref=group_cover"));
         startActivity(openFacebook);
     }
 }
